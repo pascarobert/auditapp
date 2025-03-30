@@ -1,0 +1,862 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    min-height:100vh;
+}
+
+/*Nav*/
+
+nav{
+    width: 100%;
+    height:110px;
+    background-color:rgb(224, 224, 224);   
+    position: relative;    
+    z-index:99;
+}
+
+.logo{
+    float:left;      
+    margin-right: 20px;
+}
+
+nav ul{
+    float:left;    
+    background-color:rgb(224, 224, 224);    
+    height:100px;    
+    align-items: center;
+    display:flex;
+}
+
+nav ul li{
+    float:left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a{
+    display: block;
+    color:rgb(0, 0, 0);
+    font-size:16px;
+    padding:21px 14px ;
+    text-decoration: none;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color:rgb(224, 224, 224); 
+    height: auto;
+    padding:10px;
+    border-radius: 0px 0px 4px 4px;   
+}
+
+nav ul li:hover ul {
+    display: block; 
+}
+
+nav ul li ul li {
+    width: 180px;   
+    border-radius: 4px;   
+}
+nav ul li ul li a {
+    padding:8px 14px ;    
+}
+
+nav ul li ul li a:hover {
+    background-color:rgb(236, 236, 236);    
+}
+
+.nav-links-wrap{
+    right: 0;
+    position: absolute;
+    height:100px;
+    display: flex;    
+    align-items: center;    
+}
+
+.nav-links-wrap .nav-btn{
+    display: inline-block;
+    height:35px;
+    width: 35px;
+    margin: 0 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color:white;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.6s ease-out;
+    overflow: hidden;
+}
+
+.nav-links-wrap .nav-btn:hover{
+    width:120px;
+}
+
+.nav-links-wrap .nav-btn .nav-icon{
+    display: inline-block;
+    height:35px;
+    width: 35px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 35px;
+    text-align: center;
+}
+
+.nav-links-wrap .nav-btn i {
+    font-size: 20px;
+    line-height: 35px;    
+}
+
+.nav-links-wrap .nav-btn span{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 35px;
+    margin-left: 10px;    
+}
+
+.nav-btn-link{
+    text-decoration: none;
+    color: black;
+}
+
+.search-bar{
+    margin: 220px auto;
+    padding:10px 20px;
+    display: flex;
+    align-items: center;
+    transition:0.8s;
+    border-radius: 30px;
+    background-color:white;
+    box-shadow: 0 0 25px 0 rgba(0,0,0, 0.4);     
+}
+/*
+.search-bar:hover input{
+    width:300px;
+    cursor: pointer;
+}
+*/
+.search-bar input{
+    background-color:transparent;
+    border:none;
+    outline: none;
+    width:300px;
+    font-weight: 500;
+    font-size:16px;
+    transition:0.8s;
+}
+
+.nav-search{
+    color:black;
+}
+
+.fa-server{
+    color:black;
+}
+
+/*Slide-show*/
+
+.img-slide{
+    width:100%;
+    margin:0 auto;
+}
+
+.slide{
+    position: relative;
+    color:rgb(255, 255, 255);
+    text-align:center;
+    height:auto;
+    width:100%;      
+}
+
+.img-slide-text{
+    position:absolute;
+    top:0%;
+    padding-top: 20px;
+    width:100%;
+    height:auto;    
+}
+
+.btn-img-slide{
+    margin-top: 18px;
+    padding:10px 18px;
+    background-color:transparent;
+    color: white;
+    border:1px solid;
+    border-radius: 5px ;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.img-slide{
+    width: 100%;
+    height: auto;
+    overflow: hidden;        
+}
+
+.slider{
+    width: 500%;
+    height: 600px;
+    display: flex;    
+}
+
+.slider input{
+    display: none;    
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+  
+.slide img{
+    width: 100%;
+    height: 700px;
+}
+  
+.navigation-manual{
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content:center;
+}
+  
+.manual-btn{
+    border: 2px solid #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;    
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+  
+.manual-btn:hover{
+    background: #ffffff;
+}
+  
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+  
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+  
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+  
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/*Footer*/
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color:rgb(0, 0, 0);
+    color: white;
+    border-top:rgb(39, 39, 39) 2px solid;
+}  
+
+.footer-info{
+    width:100%;
+    justify-content:center;
+    display: flex;
+    height:auto;
+}
+
+.footer-nav ul{
+    margin:10px;
+}
+
+.footer-nav ul li{
+    list-style: none; 
+}
+
+.footer-nav ul li a{
+    text-decoration: none;
+    color: white;   
+}
+
+.footer-nav{
+    background-color:rgb(0, 0, 0);
+    width:30%;
+    text-align:center;
+    font-size: 12px;    
+}
+
+.footer-nav-page{
+    font-size:20px;
+}
+
+.footer-logo{
+    position: relative;
+    background-color:rgb(0, 0, 0);
+    width:30%;
+    text-align:center;
+}
+
+.footer-logo-content{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.footer-social{
+    background-color:rgb(0, 0, 0);
+    width:30%;
+    font-size: 16px;
+    text-align:center;
+    position: relative; 
+}
+
+.footer-social-content{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.footer-btn{
+    background-color:rgb(0, 0, 0);
+    padding:10px;
+    border-radius:200px;    
+    cursor: pointer;
+}
+
+
+.footer-copyright{
+    width: 90%;
+    height:auto;
+    margin: 0 auto;
+    border-top:rgb(39, 39, 39) 2px solid;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Contact-Newslatter*/
+
+.contact-news{
+    width:100%;
+    height:auto;
+    padding:30px;
+    background-color:rgb(0, 0, 0);
+    border-top:rgb(39, 39, 39) 2px solid;
+}
+
+.contact{
+    color:white;
+    width:50%;
+    text-align: center;
+}
+
+.contact-news-content{
+    display:flex;
+    width: 100%;
+}
+
+.news{
+    color:white;
+    width:50%;
+    text-align: center;
+}
+
+.newslatter{
+    width:40%;
+    height:40px;
+}
+
+.submit-news{
+    padding:10px;
+    background-color:black;
+    color:white;
+    cursor: pointer;
+}
+
+
+
+/*Promo-Code*/
+.promo-code{
+    width:100%;
+    text-align: center;
+    background-color:rgb(3, 3, 3);
+    color:rgb(129, 129, 129);
+    height:200px;
+    padding-top:20px;
+    
+}
+
+.promo-text{
+    display: flex;
+    width:100%;
+    padding-top:50px;
+    justify-content: center;
+    
+}
+
+.promo-text-title{
+    padding:0 10px;
+}
+
+.promo-code-number{
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+}
+
+/*Client-review*/
+.client-review{
+    height:auto;
+    width:100%;
+    background-color:rgb(240, 240, 240);
+    padding-bottom: 30px;
+}
+
+.review-header{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.clients-review{
+    padding-top: 40px;
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+}
+
+.right-review{
+    background-color:white;
+    height:auto;
+    width:45%;
+    padding-bottom: 40px;
+}
+
+.left-review{
+    background-color:white;
+    height:auto;
+    width:45%;    
+    padding-bottom: 40px;
+}
+
+.text-review{    
+    width:90%;
+    margin: 0 auto;
+    border-left: 3px solid black;
+    padding-left: 10px;
+}
+
+.client-name{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top:20px;
+}
+
+.img-client{
+    border-radius:50%;
+}
+
+
+
+/*Products*/
+
+.products{
+    padding:20px 0;
+    height:auto;
+    width:100%;
+}
+
+.product-text{
+    text-align:center;
+}
+
+.product-logo{
+    width:100%;
+    justify-content:space-between;
+    margin: 0 auto;
+    display: flex;
+    align-items:center;    
+}
+
+
+/*Product PAGE*/
+/*Products Grid*/
+
+.card {
+    background-color:rgb(240, 240, 240);
+    color: black;
+    padding: 1rem;
+    height: 18rem;
+    border: 1px solid black;
+}
+
+.cards {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px 0px;
+}
+
+.cards a {
+    text-decoration: none;
+
+}
+
+.card-content{
+    width:100%;
+    height: auto;    
+    justify-content: center;
+    align-items: center;    
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card-title{
+    padding: 10px;
+    text-decoration: none;
+}
+
+@media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(3, 1fr); }
+}
+
+/*Informations*/
+
+.title{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    text-decoration: underline 4px;
+}
+
+
+.questions-container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.question{
+    border-bottom: 1px solid #fff;
+}
+
+.question button{
+    width: 100%;
+    background-color: rgb(225, 225, 225);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    border:none;
+    outline: none;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.question p{
+    font-size: 22px;
+    max-height: 0;
+    opacity: 0;
+    line-height: 1.5;
+    overflow: hidden;
+    transition: all 0.6s ease;
+}
+.d-arrow{
+    transition: transform 0.5s ease-in ;
+    color: #fff;
+}
+
+/*add this class when click*/
+
+.question p.show{
+    max-height: 200px; 
+    opacity: 1;
+    padding:0px 15px 30px 15px;
+}
+.question button .d-arrow.rotate{
+    transform: rotate(180deg);
+}
+
+.faq-section{
+    height: auto;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+/*Bottom Footer*/
+
+.bottom-news-footer{
+    top:100%;
+    position: sticky;
+    width: 100%;
+}
+
+/*Mobile response*/
+
+@media screen  and (max-width:1000px){
+    .search-bar:hover input{
+        width:300px;
+        cursor: pointer;
+    }
+    .search-bar input{
+        width:0px;
+    }  
+}
+
+@media screen  and (max-width:1040px){
+    .product-logo{
+        display:inline-block;
+        text-align:center;
+        justify-content:space-between;
+    }
+}
+
+/*LANDING*/
+
+.login-btn{
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); 
+}
+
+.login-btn:active {
+    background-color: #004085;
+    transform: scale(1); 
+}
+
+.promo-code-landing{
+    height: 300px;
+}
+
+.background-image {
+    position: fixed;
+    text-align: center;
+}
+
+
+.background-image img {
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.landing-logo{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav-landing{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Grid*/
+
+.ticket-container {
+    display: grid;
+    grid-template-columns: 1fr; /* O singură coloană */
+    grid-gap: 20px; /* Spațiu între tickete */
+
+}
+
+.ticket-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative; /* Folosit pentru a poziționa butonul de download */
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Afișează elementele într-o coloană */
+}
+
+.status-dropdown {
+    margin-left: auto; /* Mutați dropdown-ul la dreapta */
+}
+
+.ticket-card p {
+    margin: 5px 0;
+}
+
+.ticket-status {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.btn-panel{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+.panel-title{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.download-btn-client,
+.download-btn-auditor,
+.upload-btn-auditor {
+    top: 10px;
+    left: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+
+.document-list {
+    margin-top: 10px;
+}
+
+.document-list li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.status-dropdown{
+    position: right;
+}
+
+
+.panel-buttons{
+justify-content: flex-end;
+display: flex;
+
+}
+
+.panel-btn{
+margin-left: 5px;
+color:black;
+}
+
+.panel-btn-link{
+color: black;
+
+}
+
+.panel-icon-download{
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 25px;
+    position: relative;
+}
+
+.panel-icon-download:hover::after {
+    content: "Download Documents";
+    position: absolute;
+    top: 100%; /* Plasăm conținutul sub buton */
+    left: 50%; /* Centrăm conținutul orizontal */
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap; /* Previne tăierea textului */
+    opacity: 0; /* Inițial, conținutul este invizibil */
+    transition: opacity 0.3s ease; /* Animare pentru trecerea între stări */
+}
+
+.panel-icon-download:hover::after {
+    opacity: 1;
+}
+
+.panel-icon-upload{
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 25px;
+    position: relative;
+}
+
+.panel-icon-upload:hover::after {
+    content: "Upload Document";
+    position: absolute;
+    top: 100%; /* Plasăm conținutul sub buton */
+    left: 50%; /* Centrăm conținutul orizontal */
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap; /* Previne tăierea textului */
+    opacity: 0; /* Inițial, conținutul este invizibil */
+    transition: opacity 0.3s ease; /* Animare pentru trecerea între stări */
+}
+
+.panel-icon-upload:hover::after {
+    opacity: 1;
+}
+
+.panel-icon-delete{
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 25px;
+    position: relative;
+}
+
+.panel-icon-delete:hover::after {
+    content: "Delete Ticket";
+    position: absolute;
+    top: 100%; /* Plasăm conținutul sub buton */
+    left: 50%; /* Centrăm conținutul orizontal */
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap; /* Previne tăierea textului */
+    opacity: 0; /* Inițial, conținutul este invizibil */
+    transition: opacity 0.3s ease; /* Animare pentru trecerea între stări */
+}
+
+.panel-icon-delete:hover::after {
+    opacity: 1;
+}

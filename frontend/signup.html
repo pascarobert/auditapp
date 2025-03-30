@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disertație - Pașca Robert</title>
+    <link rel="icon" type="image/x-icon" href="../static/img/robo-tech-logoo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/log.css">
+</head>
+<body> 
+
+    <!--NAV-->    
+
+    <nav class="nav-landing">
+        <a href="/landing">
+            <img class="logo landing-logo" src="../static/img/logo/Robert Audit-logos_black.png" width="110px" alt="" >
+        </a>
+    </nav>
+
+    <!--Sign up-->    
+
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form action="/createuser" method="POST" enctype=multipart/form-data>
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="username">Choose a Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Choose a Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" value="Send">Sign Up</button>
+            </div>
+        </form>
+        <div class="signin-link">
+            <p>Already have an account? <a href="/signin">Sign in</a>.</p>
+        </div>
+    </div>
+
+   <!--Always Bottom-->
+    
+    <div class="bottom-news-footer">
+        <!--Footer-->
+        <footer class="footer">   
+                <div class="footer-copyright">
+                    <p> Copyright @ Pașca Robert - Cătălin, Facultatea de Matematică și Informatică, Inginerie Software, 2024. </p>
+                </div>      
+        </footer> 
+    </div>
+    <script src="../static/javascript/script.js"></script>
+</body>
+</html>

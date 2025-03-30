@@ -1,0 +1,78 @@
+.container-formular {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-formular h2 {
+    color: #333;
+    text-align: center;
+}
+
+.container-formular form {
+    width: 100%;
+}
+
+.container-formular .inputtype input[type="text"],
+.container-formular .inputtype input[type="number"],
+.container-formular .inputtype textarea {
+    width: calc(100% - 22px); /* pentru a ține cont de margin */
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.container-formular .inputtype select {
+    width: calc(100% - 22px); /* pentru a ține cont de margin */
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.container-formular input[type="file"] {
+    margin-top: 8px;
+}
+
+.container-formular input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.container-formular input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.container-formular-description{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}
+
+.container-formular-content{
+    margin:10px 0;
+
+}
+
+.upload-documents{
+    margin:10px 0;
+    font-weight: bold;
+}
+
+.container-formular h2{
+    margin: 30px 0;
+}
